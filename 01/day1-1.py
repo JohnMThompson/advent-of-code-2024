@@ -5,7 +5,7 @@ import pandas as pd
 df = pd.read_csv('input.txt', header=None, names=['col1'])
 
 # Split data into columns
-df[['col1', 'col2',]] = df['col1'].str.split(' ', n=1, expand=True)
+df[['col1', 'col2']] = df['col1'].str.split(' ', n=1, expand=True)
 
 # Data cleanup and sorting
 
